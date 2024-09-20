@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Natura</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="image-container">
+            <img src="images/natura-perfumes-banner.jpg" alt="Perfumes Natura">
+        </div>
+        <div class="form-container">
+            <form id="perfumeForm">
+                <h2>Encontre seu perfume Natura ideal</h2>
+                
+                <label for="genero">Você prefere perfumes femininos, masculinos ou os dois?</label>
+                <select id="genero" name="genero">
+                    <option value="Feminino">Feminino</option>
+                    <option value="Masculino">Masculino</option>
+                    <option value="Os dois">Os dois</option>
+                </select>
+            
+                <label for="aroma">Qual tipo de aroma você prefere?</label>
+                <select id="aroma" name="aroma">
+                    <option value="Adocicado">Adocicado</option>
+                    <option value="Amadeirado">Amadeirado</option>
+                    <option value="Cítrico">Cítrico</option>
+                    <option value="Floral">Floral</option>
+                    <option value="Frutal">Frutal</option>
+                </select>
+            
+                <label for="natureza">Você gosta de cheiros que lembram a natureza?</label>
+                <select id="natureza" name="natureza">
+                    <option value="Sim">Sim</option>
+                    <option value="Não">Não</option>
+                </select>
+            
+                <label for="ocasiao">Em qual ocasião você usaria o perfume?</label>
+                <select id="ocasiao" name="ocasiao">
+                    <option value="Dia a dia">Dia a dia</option>
+                    <option value="Eventos especiais">Eventos especiais</option>
+                    <option value="Noite">Noite</option>
+                </select>
+            
+                <label for="intensidade">Qual é a intensidade de fragrância que você prefere?</label>
+                <select id="intensidade" name="intensidade">
+                    <option value="Suave">Suave</option>
+                    <option value="Moderada">Moderada</option>
+                    <option value="Forte">Forte</option>
+                </select>
+            
+                <button type="button" onclick="recomendarPerfume()">Próxima</button>
+            </form>
+            
+        </div>
+    </div>
+
+    <div id="resultado-container" class="resultado-container" style="display: none;">
+        <h3>Perfumes recomendados:</h3>
+        <div id="resultado" class="resultado"></div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
